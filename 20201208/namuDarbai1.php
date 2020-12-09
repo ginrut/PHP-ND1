@@ -160,6 +160,19 @@ if($numb4 === 0 ) {
 
 echo "5. Nuliu yra $null, vienetu yra $one, dvejetu yra $two <br>";
 
+// Marek variantas<br>5...............................<br>';
+
+// $num1 = rand(0, 2);
+// $num2 = rand(0, 2);
+// $num3 = rand(0, 2);
+// $num4 = rand(0, 2);
+// $count0 = $count1 = $count2 = 0;
+// ${​​'count' . $num1}​​++;
+// ${​​'count' . $num2}​​++;
+// ${​​'count' . $num3}​​++;
+// ${​​'count' . $num4}​​++;
+// echo "0 kartų: $count0<br> 1 kartų: $count1 <br> 2 kartų: $count2";
+
 // 6. Naudokite funkcija rand() . Sugeneruokite atsitiktinį skaičių nuo 1 iki 6 ir jį atspausdinkite atitinkame h tage. Pvz skaičius 3- rezultatas: <h3>3</h3>
 
 $number = rand (1, 6);
@@ -193,16 +206,31 @@ if ($numbr3 < 0){
 } else  
     echo "<font color='blue'>7. Third number is $numbr3.</font> <br>";
 
+
+// Rositos variantas:
+//     $f = rand(-10, 10);
+//     $s = rand(-10, 10);
+//     $t = rand(-10, 10);
+
+//     $fColor = ($f < 0) ? "green" : ($f == 0 ? "red" : "blue");
+//     $sColor
+//      = ($s < 0) ? "green" : ($s == 0 ? "red" : "blue");
+//     $tColor = ($t < 0) ? "green" : ($t == 0 ? "red" : "blue");
+
+//     echo "<p> <font color=$fColor>$f</font> </p>", 
+//         "<p> <font color=$sColor>$s</font> </p>", 
+//         "<p> <font color=$tColor>$t</font> </p>";
+
 // 8. Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite rand() funkcija nuo 5 iki 3000.
 
 $zvakiuKiekis = rand(5, 3000);
 
 If ($zvakiuKiekis > 1000){
     $naujaKaina = $zvakiuKiekis * 0.97;
-    echo "8. Nupirko $zvakiuKiekis uz $naujaKaina EUR <br>";
+    echo "8. Nupirko $zvakiuKiekis zvakiu uz $naujaKaina EUR <br>";
 } elseif ($zvakiuKiekis > 2000){
     $naujaKaina = $zvakiuKiekis * 0.96;
-    echo "8. Nupirko $zvakiuKiekis uz $naujaKaina EUR <br>";
+    echo "8. Nupirko $zvakiuKiekis zvakiu uz $naujaKaina EUR <br>";
 } else echo "8. Nupirko $zvakiuKiekis uz $zvakiuKiekis EUR <br>";
 
 // 9. Naudokite funkcija rand() . Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
